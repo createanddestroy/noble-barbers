@@ -1,0 +1,340 @@
+/****************************
+*****************************
+		HOME STYLE
+*****************************
+*****************************/
+
+* {
+
+	margin: 0;
+
+}
+
+/****************************
+*****************************
+		TYPOGRAPHY
+*****************************
+*****************************/
+
+ 
+@font-face {
+
+    font-family: Hellfire;
+    src: url('../fonts/Hellfire/HHellfire-Regular.otf'),
+    url('HHellfire.otf') format('opentype');
+
+}
+
+
+/****************************
+*****************************
+		HOME IMAGES
+*****************************
+*****************************/
+
+/* FIRST IMAGE CONTENT */
+ 
+.welcome {
+
+	background-image: url(../images/2.jpeg);
+	width: 100%;
+	height: 120vh;
+	border-bottom-width: 20%;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%, contain;
+	background-repeat: no-repeat;
+
+}
+
+
+/* SECOND IMAGE CONTENT */
+
+.content {
+
+	background-color: #000000;
+	width: 100%;
+	height: 120vh;
+	padding-top: 10%;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+/* THIRD IMAGE CONTENT */
+
+.culture {
+
+	background-image: url(../images/3.jpeg);
+	width: 100%;
+	height: 110vh;
+	padding-top: 10%;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%, contain;
+	background-repeat: no-repeat;
+
+}
+
+/****************************
+*****************************
+	SLIDESHOW IMAGES
+*****************************
+*****************************/
+
+img#imgage-1 {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+div#two {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+div#three {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+div#four {
+
+	height: 100%;
+	width: 100%;
+
+}
+
+
+
+
+
+
+/****************************
+*****************************
+		PARALLAX
+*****************************
+*****************************/
+
+@-webkit-keyframes fadeIn {from {opacity:0; } to {opacity:1;} }
+@-moz-keyframes fadeIn {from {opacity:0;} to {opacity:1;} }
+@keyframes fadeIn {from {opacity:0;} to {opacity:1;} }
+
+.fade-in {
+
+	opacity: 0;
+	-webkit-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+}
+
+
+/****************************
+*****************************
+		HOME TEXT
+*****************************
+*****************************/
+
+/* NOBLE BARBERS  */
+
+h1#content-text-1 {
+
+	font-family: "Hellfire";
+	font-size: 5em;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 30%;
+	right: 20%;
+	border: .1em solid #FFFFFF;
+	padding: 20px 20px 20px 20px;
+
+}
+
+/* SECOND DESCRIPTION */
+
+h1#content-text-2 {
+
+	font-family: Futura, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	display: inline-block;
+	bottom:  30%;
+	font-size: 3.5em;
+	color: #336699;
+
+}
+
+/* THIRD DESCRIPTION */
+
+.culture h1 {
+
+	font-family: Futura, sans-serif;
+	font-style: normal;
+	font-size: 3.5em;
+	color: #FFFFFF;
+	text-align: center;
+	display: inline-block;
+
+}
+
+/* HOURS LIST */
+
+ul#hours {
+
+	list-style: none;
+	font-family: Futura, sans-serif;
+	font-size: 2em;
+	font-style: normal;
+	padding-top: 40vh;
+
+}
+
+/* HOURS BOLD TITLE ONLY */
+
+li#title {
+
+	font-weight: bold;
+
+}
+
+/* LOCATION BOLD TEXT ONLY */
+
+p#title-2 {
+
+	font-family: Futura. sans-serif;
+	font-size: 2em;
+	font-style: normal;
+	font-weight: bold;
+
+}
+/* ADDRESS TEXT ONLY */
+
+p#title-3 {
+
+	font-family: Futura. sans-serif;
+	font-size: 1.3em;
+	font-style: normal;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+   body {
+       position: static;
+   }
+}
+
+
+/****************************
+*****************************
+	GOOGLE MAPS STYLE 
+*****************************
+*****************************/
+
+
+div#map {
+
+	width: 100%;
+	height: 100%;
+	bottom: 50vh;
+}
+
+/****************************
+*****************************
+	SLIDESHOW STYLE
+*****************************
+*****************************/
+
+ * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+#two {
+
+	width: 30vw;
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/****************************
+*****************************
+		FOOTER STYLE
+*****************************
+*****************************/
+
+
+ .container {
+
+padding-top: 40%;
+
+}
+
+
+.footer {
+
+	position: static;
+	bottom: 0;
+	right: 10vh;
+  	width: 100%;
+  	height: 10px;
+  	background-color: transparent;
+	text-align: right;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	
+	
+}
+
